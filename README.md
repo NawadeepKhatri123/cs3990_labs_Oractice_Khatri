@@ -1,1 +1,4 @@
-# NawadeepKhatri123.github.io
+Repository for CS3990 LABS
+
+NAWADEEP KHATRI
+5086950
