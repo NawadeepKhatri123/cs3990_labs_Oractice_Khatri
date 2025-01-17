@@ -1,17 +1,19 @@
 * {
     color: rgb(1, 1, 69);
-    background-color: rgb(133, 242, 209)!important;
+    background-color: rgb(0, 0, 0)!important;
+
+}
+body{
+    font-family: 'Roboto Thin', sans-serif;
+    line-height : 1.8;
+
+}
+.logo{
+    height:50px;
+
+
 }
 
-h1 {
-    color: rgb(125, 24, 46);
-    background-color: rgb(216, 230, 91);
-}
-
-h2 {
-    color: rgb(5, 54, 122);
-}
-
-p {
-    color: rgb(3, 60, 62);
+p,em, strong{
+    color: white;
 }
