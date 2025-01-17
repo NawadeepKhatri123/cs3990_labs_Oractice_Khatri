@@ -1,0 +1,64 @@
+* {
+    color: rgb(1, 1, 69);
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height : 1.2;
+    color: #ffffff;
+}
+.logo{
+
+    height: 40px;
+
+}
+.pages{
+
+    height: 40px;
+    justify-content: right;
+    flex-direction: row;
+
+}
+.container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.button {
+    background-color: #06283D; /* Green */
+    border: white;
+
+    color: #eeeae3;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+
+}
+.button1 {
+    border-radius: 12px;
+    opacity: 0.9;
+}
+.header{
+    text-align: center;
+    line-height: 1.5;
+}
+p,em,strong{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.profile{
+    font-size: 11px;
+}
+.small-text {
+    font-size: 0.8em; /* Adjust size relative to the parent font */
+    color: white; /* Optional: change color for emphasis */
+}
+ul {
+    font-size: 9px; /* Adjust the font size here */
+    text-align: center;
+}
