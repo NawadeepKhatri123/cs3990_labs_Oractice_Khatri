@@ -83,17 +83,17 @@ p{
     justify-content: center;
     gap:10rem;
     list-style: none;
-    font-size: 15px;
+    font-size: 20px;
 }
 .job-details{
     justify-content: center;
     list-style: none;
-    font-size: 11px;
+    font-size: 15px;
 }
 .job-details1{
     justify-content: center;
     list-style: none;
-    font-size: 11px;
+    font-size: 13px;
 }
 .company {
     padding: 2rem; /* Added padding for better visibility */
