@@ -84,13 +84,14 @@ p,em,strong{
 .jobs {
     display: flex;
     justify-content: center;
-    gap: 5rem; /* Adjusted the gap to make the layout more flexible */
+    gap: 2rem; /* Adjusted the gap to make the layout more flexible */
     list-style: none;
     font-size: 20px;
     padding: 0; /* Removed default padding from <ul> */
 }
 
 .company {
+    width:350px;
     background: black;
     padding: 2rem;
     border-radius: 2rem;
@@ -108,7 +109,7 @@ p,em,strong{
     list-style: none;
     font-size: 15px;
     padding: 0; /* Remove default padding */
-    margin-top: 1rem; /* Add spacing between job title and details */
+    margin-top: 2rem; /* Add spacing between job title and details */
 }
 
 .job-details li, .job-details1 li {
