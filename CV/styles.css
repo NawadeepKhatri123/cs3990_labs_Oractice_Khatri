@@ -5,6 +5,10 @@
     line-height : 1.2;
     color: #ffffff;
 }
+a{
+
+    text-decoration: none;
+}
 .web-links{
     list-style: inside;
 }
@@ -174,8 +178,4 @@ ul {
     height: 70px; /* Fixed height for each image */
     width: 70px; /* Fixed width for each image */
     object-fit: cover; /* Ensures the image fits within the box */
-}
-a{
-
-    text-decoration: none;
 }
