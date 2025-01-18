@@ -175,3 +175,7 @@ ul {
     width: 70px; /* Fixed width for each image */
     object-fit: cover; /* Ensures the image fits within the box */
 }
+a{
+
+    text-decoration: none;
+}
