@@ -25,8 +25,8 @@
     align-items: center;
 }
 .round{
-    width: 175px; /* Set the width */
-    height: 175px; /* Set the height */
+    width: 250px; /* Set the width */
+    height: 250px; /* Set the height */
     border-radius: 50%; /* This makes it round */
     object-fit: cover; /* Ensures the image scales well */
 }
