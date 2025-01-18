@@ -5,9 +5,8 @@
     line-height : 1.2;
     color: #ffffff;
 }
-a{
-
-    text-decoration: none;
+.no-underline{
+    text-decoration: none !important;
 }
 .web-links{
     list-style: inside;
