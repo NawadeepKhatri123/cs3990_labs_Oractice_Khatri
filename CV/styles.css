@@ -64,13 +64,13 @@ ul {
     text-align: center;
 }
 .skills{
-    background-color: var(--container-color);
+
     padding: 2rem 1.5rem;
     border-radius: 1rem;
     align-items: center;
 }
 .skills__title{
-    font-size: 13px;
+
     text-align: center;
 }
 .skill-items{
@@ -83,8 +83,8 @@ ul {
     padding: 10px 10px; /* Padding inside the box */
     border: 1px solid #555; /* Border around the box */
     border-radius: 15px; /* Rounded corners */
-    background-color: #222; /* Background color of the box */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: shadow for effect */
+    background-color: black; /* Background color of the box */
+
     height:30px;
 
 
