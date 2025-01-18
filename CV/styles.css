@@ -78,33 +78,40 @@ p{
 
 }
 
-.jobs{
+.jobs {
     display: flex;
     justify-content: center;
-    gap:10rem;
+    gap: 5rem; /* Adjusted the gap to make the layout more flexible */
     list-style: none;
     font-size: 20px;
+    padding: 0; /* Removed default padding from <ul> */
 }
-.job-details{
+
+.company {
+    background: black;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 0.1rem solid #333333;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.job-details, .job-details1 {
     list-style: none;
     font-size: 15px;
+    padding: 0; /* Remove default padding */
+    margin-top: 1rem; /* Add spacing between job title and details */
 }
-.job-details1{
-    justify-content: center;
-    list-style: none;
-    font-size: 13px;
+
+.job-details li, .job-details1 li {
+    margin-bottom: 0.5rem; /* Add some space between each job description item */
 }
-.company {
-    padding: 2rem; /* Added padding for better visibility */
-    flex: 1;
-    background: black;
-    border-radius: 2rem; /* Rounded corners */
-    border: 0.1rem solid #333333; /* Adjusted border syntax */
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Optional: Adds a shadow to make the edges pop */
-    overflow: hidden; /* Ensure content stays inside the rounded box */
-}
+
 .button {
     background-color: #06283D; /* Green */
     border: white;
