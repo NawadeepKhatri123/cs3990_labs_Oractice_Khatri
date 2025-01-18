@@ -5,6 +5,9 @@
     line-height : 1.2;
     color: #ffffff;
 }
+a:-webkit-any-link{
+    text-decoration: none;
+}
 .no-underline{
     text-decoration: none !important;
 }
