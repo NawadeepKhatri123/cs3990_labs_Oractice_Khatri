@@ -95,6 +95,16 @@ p{
     list-style: none;
     font-size: 11px;
 }
+.company {
+    padding: 2rem; /* Added padding for better visibility */
+    flex: 1;
+    background: black;
+    border-radius: 2rem; /* Rounded corners */
+    border: 0.1rem solid #333333; /* Adjusted border syntax */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Optional: Adds a shadow to make the edges pop */
+    overflow: hidden; /* Ensure content stays inside the rounded box */
+}
 .button {
     background-color: #06283D; /* Green */
     border: white;
@@ -130,7 +140,7 @@ p,em,strong{
     color: white; /* Optional: change color for emphasis */
 }
 ul {
-    font-size: 9px; /* Adjust the font size here */
+    font-size: 10px; /* Adjust the font size here */
     text-align: center;
 }
 .skills{
