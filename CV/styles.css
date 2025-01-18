@@ -25,8 +25,8 @@
     align-items: center;
 }
 .round{
-    width: 250px; /* Set the width */
-    height: 250px; /* Set the height */
+    width: 300px; /* Set the width */
+    height: 300px; /* Set the height */
     border-radius: 50%; /* This makes it round */
     object-fit: cover; /* Ensures the image scales well */
 }
@@ -40,7 +40,7 @@ H2{
 
 }
 .name-add{
-    font-size: 30px;
+    font-size: 35px;
 }
 .pages{
 
