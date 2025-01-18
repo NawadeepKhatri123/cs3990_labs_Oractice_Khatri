@@ -5,6 +5,31 @@
     line-height : 1.2;
     color: #ffffff;
 }
+.web-links{
+    list-style: inside;
+}
+
+.web-links{
+    gap:2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+.web-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round{
+    width: 150px; /* Set the width */
+    height: 150px; /* Set the height */
+    border-radius: 50%; /* This makes it round */
+    object-fit: cover; /* Ensures the image scales well */
+}
 .logo{
 
     height: 40px;
@@ -83,7 +108,7 @@ ul {
     padding: 10px 10px; /* Padding inside the box */
     border: 1px solid #555; /* Border around the box */
     border-radius: 15px; /* Rounded corners */
-    background-color: black; /* Background color of the box */
+    background-color: black; /* Background colorwhat of the box */
 
     height:30px;
 
