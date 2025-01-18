@@ -38,9 +38,12 @@ H5{
     text-align: center;
     font-size: 30px;
 }
-p{
-    font-size:20px;
+p,em,strong{
+    color: white;
+    text-align: center;
+    font-size: 10px;
 }
+
 .logo{
 
     height: 40px;
@@ -133,15 +136,8 @@ p{
     text-align: center;
     line-height: 1.5;
 }
-p,em,strong{
-    color: white;
-    text-align: center;
-    font-size: 10px;
-}
 
-.profile{
-    font-size: 11px;
-}
+
 .small-text {
     font-size: 0.8em; /* Adjust size relative to the parent font */
     color: white; /* Optional: change color for emphasis */
@@ -160,19 +156,21 @@ ul {
 
     text-align: center;
 }
-.skill-items{
 
-}
-.skill-items{
+.skill-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10px; /* Padding inside the box */
-    border: 1px solid #555; /* Border around the box */
-    border-radius: 15px; /* Rounded corners */
-    background-color: black; /* Background colorwhat of the box */
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+    gap: 1rem; /* Adds space between the images */
+}
 
-    height:30px;
-
-
+.skill-icon {
+    background: black;
+    padding: 0.5rem; /* Adjust padding inside each image */
+    border-radius: 3rem; /* Rounded corners */
+    border: 0.1rem solid #333333; /* Light border around the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Optional shadow */
+    height: 70px; /* Fixed height for each image */
+    width: 70px; /* Fixed width for each image */
+    object-fit: cover; /* Ensures the image fits within the box */
 }
