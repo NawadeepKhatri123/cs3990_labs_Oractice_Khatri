@@ -1,0 +1,53 @@
+* {
+    color: rgb(1, 1, 69);
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height : 1.2;
+    color: #ffffff;
+}
+.sticky-buttons {
+    position: fixed;
+    top: 44%; /* Centers vertically in the viewport */
+    right: 15px; /* Positions it slightly inward from the right edge */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 13px; /* Space between the buttons */
+    margin-left: auto;
+
+}
+.header{
+    text-align: center;
+    width: 100%;
+}
+.add-edu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 6%;
+    position: relative;
+    justify-content: flex-start;
+
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+p{
+    font-size: 19px;
+    margin :20px
+}
+.logo{
+    display: flex;
+    width: 100px; /* Set the width */
+    height: 100px; /* Set the height */
+    border-radius: 50%; /* This makes it round */
+    object-fit: cover; /* Ensures the image scales well */
+    align-self: end;
+    margin-right:250px;
+    margin-bottom : 60px;
+}
+.nwp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
