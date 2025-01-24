@@ -65,10 +65,12 @@ a{
     border-radius: 50%;
 
 
+
 }
 H2{
     font-size: 40px;
     text-align: center;
+    font-style:italic;
 
 }
 H5{
@@ -207,6 +209,36 @@ ul {
     padding: 0.5rem; /* Adjust padding inside each image */
     border-radius: 3rem; /* Rounded corners */
     border: 0.1rem solid #333333; /* Light border around the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Optional shadow */
+    height: 70px; /* Fixed height for each image */
+    width: 70px; /* Fixed width for each image */
+    object-fit: cover; /* Ensures the image fits within the box */
+}
+.skill-icon1 {
+    background: black;
+    padding: 0.5rem; /* Adjust padding inside each image */
+    border-radius: 3rem; /* Rounded corners */
+    border: 0.1rem solid #06283D; /* Light border around the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Optional shadow */
+    height: 70px; /* Fixed height for each image */
+    width: 70px; /* Fixed width for each image */
+    object-fit: cover; /* Ensures the image fits within the box */
+}
+.skill-icon2 {
+    background: black;
+    padding: 0.5rem; /* Adjust padding inside each image */
+    border-radius: 3rem; /* Rounded corners */
+    border: 0.1rem solid #0073e6; /* Light border around the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Optional shadow */
+    height: 70px; /* Fixed height for each image */
+    width: 70px; /* Fixed width for each image */
+    object-fit: cover; /* Ensures the image fits within the box */
+}
+.skill-icon3 {
+    background: black;
+    padding: 0.5rem; /* Adjust padding inside each image */
+    border-radius: 3rem; /* Rounded corners */
+    border: 0.1rem solid #ff6347; /* Light border around the image */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Optional shadow */
     height: 70px; /* Fixed height for each image */
     width: 70px; /* Fixed width for each image */

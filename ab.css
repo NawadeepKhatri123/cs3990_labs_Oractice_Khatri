@@ -1,11 +1,17 @@
-.image-container{
-    position: relative;
-    border: 3px solid red;
-}
+
 .info-box{
     border-bottom: 1px solid red;
 }
 .each{
+    border: 3px solid yellow;
+}
+.each1{
+    border: 3px solid blue;
+}
+.each2{
+    border: 3px solid green;
+}
+.each3{
     border: 3px solid red;
 }
 h2{
