@@ -42,12 +42,12 @@ p{
     height: 100px; /* Set the height */
     border-radius: 50%; /* This makes it round */
     object-fit: cover; /* Ensures the image scales well */
-    align-self: end;
+
     margin-right:250px;
-    margin-bottom : 60px;
+    margin-bottom : 15px;
 }
 .nwp{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: revert;
 }

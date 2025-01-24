@@ -25,9 +25,8 @@ li a{
 }
 .sticky-buttons {
     position: fixed;
-    top: 55%; /* Centers vertically in the viewport */
+    top: 44%; /* Centers vertically in the viewport */
     right: 15px; /* Positions it slightly inward from the right edge */
-    transform: translateY(-50%); /* Perfect vertical centering */
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stack buttons vertically */
     gap: 13px; /* Space between the buttons */
@@ -102,7 +101,7 @@ p,em,strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 25px;
 
 }
 
