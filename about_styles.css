@@ -12,7 +12,9 @@ body {
      align-items: center;
      padding: 0px;
  }
-
+.img{
+    border: 3px solid red;
+}
 .background-image {
     background-image: url('/images/back.jpg');
     background-size: cover;

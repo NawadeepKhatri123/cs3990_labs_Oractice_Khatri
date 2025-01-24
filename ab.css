@@ -1,0 +1,16 @@
+.image-container{
+    position: relative;
+    border: 3px solid red;
+}
+.info-box{
+    border-bottom: 1px solid red;
+}
+.each{
+    border: 3px solid red;
+}
+h2{
+    font-style:italic;
+}
+h3{
+    font-family: Verdana;
+}
