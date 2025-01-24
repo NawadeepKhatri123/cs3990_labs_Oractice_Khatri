@@ -8,6 +8,9 @@
 li a{
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
 
 .web-links{
     list-style: inside;
@@ -39,9 +42,10 @@ li a{
 }
 .top-button{
     border-radius: 15px;
-    border : #06283D;
+    border : #ffffff;
     position: relative;
-    left: 30px;
+    margin-left:80px;
+
 
 
 }
@@ -116,10 +120,10 @@ p,em,strong{
 .jobs {
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Adjusted the gap to make the layout more flexible */
+    gap: 2rem;
     list-style: none;
     font-size: 20px;
-    padding: 0; /* Removed default padding from <ul> */
+    padding: 0;
 }
 
 .company {
@@ -140,16 +144,16 @@ p,em,strong{
 .job-details, .job-details1 {
     list-style: none;
     font-size: 15px;
-    padding: 0; /* Remove default padding */
-    margin-top: 2rem; /* Add spacing between job title and details */
+    padding: 0;
+    margin-top: 2rem;
 }
 
 .job-details li, .job-details1 li {
-    margin-bottom: 0.5rem; /* Add some space between each job description item */
+    margin-bottom: 0.5rem;
 }
 
 .button {
-    background-color: #06283D; /* Green */
+    background-color: #06283D;
     border: white;
 
     color: #eeeae3;
@@ -172,11 +176,11 @@ p,em,strong{
 
 
 .small-text {
-    font-size: 0.8em; /* Adjust size relative to the parent font */
-    color: white; /* Optional: change color for emphasis */
+    font-size: 0.8em;
+    color: white;
 }
 ul {
-    font-size: 10px; /* Adjust the font size here */
+    font-size: 10px;
     text-align: center;
 }
 .skills{
