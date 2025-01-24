@@ -12,8 +12,17 @@ body {
      align-items: center;
      padding: 0px;
  }
-.img{
+.each{
     border: 3px solid red;
+}
+.each1{
+    border: 3px solid blue;
+}
+.each2{
+    border: 3px solid yellow;
+}
+.each3{
+    border: 3px solid green;
 }
 .background-image {
     background-image: url('/images/back.jpg');
