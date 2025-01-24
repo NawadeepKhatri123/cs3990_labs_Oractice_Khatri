@@ -1,58 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- A head section that includes metadata -->
-    <!-- Specifies the character encoding for the HTML document -->
-    <meta charset="UTF-8" />
-    <!-- Setting the viewport to make your website look good on all devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- The folllowing forces Internet Explorer to use the newest rendering engine available on the user’s computer,
-      rather than older compatibility modes.
-      This ensures that your webpage is displayed using the latest standards-compliant engine, improving both performance and design consistency-->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--Define a description of your web page-->
-    <meta name="description" content="Example 1 for HTML & CSS module" />
-    <meta name="author" content="Hanna" />
-    <title>About</title>
-    <link
-            rel="icon"
-            type="image/x-icon"
-            href="images/Designer.png"
-            sizes="96x96"
-    />
-
-    <link rel="stylesheet" href="about_styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my personal webpage. Here, you'll learn about my hobbies, career, and interests.">
+    <title>Home</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="about_styles.css">
 </head>
 <body>
-<section id  = top></section>
-<div class="container">
-    <a href="https://csnova.me" target="_blank">
-        <img src="/images/Designer.png" alt="GitHub Logo" class = "logo" >
-    </a>
-    <ul class = "web-links">
-        <li>
-            <a href = "#profile" class = "no-underline">Profile</a>
-        </li>
-        <li><a href = "#exp" class = "no-underline">Experience</a></li>
-        <li><a href = "#edu" class = "no-underline">Education</a></li>
-        <li><a href = "#skills" class = "no-underline">Skills</a></li>
+<header>
+    <h1>Page 2</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#education">Education & Career</a></li>
+        <li><a href="#movies">Favorite Movies & Books</a></li>
     </ul>
-</div>
-    <div class="sticky-buttons">
-        <button class = "sticky but1"><a href = "#top"><img src = "/images/up.png" height = 23px ></a></button>
-        <button class = "sticky but1"><a href = "#skills"><img src = "/images/down.png" height = 23px ></a></button>
-    </div>
-    <div class = "add-edu">
-        <h3 class = header> ADDITIONAL EDUCATION</h3>
-        <h4> Computer Science Diploma </h4>
-        <div class = "nwp">
-            <P> This is the formal academic program I'm currently pursuing.<br>
-                It includes courses on algorithms, data structures, software<br> engineering,
-                and systems programming, which will help me<br> deepen my technical
-                expertise.</P>
-                <img src = "images/nwp.jpg" alt = "computer-science" class = "logo">
-        </div>
-    </div>
+</nav>
+
+<section id="intro">
+    <div class = "background-image"></div>
+    <p>Hello! I'm John Doe, a web developer with a passion for technology and creativity. On this page, you'll get a glimpse of my journey, interests, and aspirations.</p>
+    <p>In my free time, I enjoy experimenting with new coding techniques, reading novels, and watching films that inspire me.</p>
+</section>
+
+<section id="education">
+    <h2>Education & Career</h2>
+    <p>I have completed a full-stack web development course on Udemy. I am constantly learning and staying updated with the latest trends in the tech industry.</p>
+    <p>Some of the career paths I am considering include:</p>
+    <ul>
+        <li>Full Stack Developer</li>
+        <li>Frontend Developer</li>
+        <li>Software Engineer</li>
+    </ul>
+</section>
+
+<section id="movies">
+    <h2>Favorite Movies & Books</h2>
+    <ul>
+        <li><strong>Movie:</strong> Inception (2010), Sci-Fi, Thriller</li>
+        <li><strong>Book:</strong> "The Alchemist" by Paulo Coelho, Adventure, Fiction</li>
+    </ul>
+</section>
+
 
 </body>
 </html>

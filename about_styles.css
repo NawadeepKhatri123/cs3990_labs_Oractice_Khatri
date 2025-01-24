@@ -1,91 +1,89 @@
-* {
-    background-image : url("images/back.jpg");
-    color:#ffffff;
-    background-size: cover;
-}
 
-
-.web-links{
-    list-style: inside;
-    opacity: 1; /* 50% transparent */
-
-}
-
-.web-links{
-    gap:2rem;
-    list-style: none;
-    font-size: 1.5rem;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #ffffff;
     margin: 0;
-    opacity: 1; /* 50% transparent */
+    padding: 0;
 
 }
-.web-links {
-    display: flex;
-    justify-content: flex-end;
+.background-image {
+    background-image: url('/images/back.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensures the text is on top of the image */
 }
-.container{
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    opacity: 1; /* 50% transparent */
-
-
-}
-.sticky-buttons {
-    position: fixed;
-    top: 44%; /* Centers vertically in the viewport */
-    right: 15px; /* Positions it slightly inward from the right edge */
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 13px; /* Space between the buttons */
-    margin-left: auto;
-    opacity: 1; /* 50% transparent */
-
-
-}
-.header{
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
     text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0073e6;
+}
+
+#intro {
+    margin: 20px;
+    text-align: justify;
+}
+
+#intro img {
+    border: 3px solid #ff6347;
+    margin-right: 15px;
+    width: 150px;
+    float: left;
+}
+
+h2 {
+    font-style: italic;
+    color: #333;
+}
+
+h3 {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: lowercase;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
     width: 100%;
-    opacity: 1; /* 50% transparent */
-
-}
-.add-edu{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-left: 6%;
-    position: relative;
-    justify-content: flex-start;
-
-
-}
-h4{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    opacity: 1;
-
-}
-p{
-    font-size: 19px;
-    margin :20px;
-    opacity: 1; /* 50% transparent */
-
-
-}
-.logo{
-    display: flex;
-    width: 100px; /* Set the width */
-    border-radius: 50%; /* This makes it round */
-
-    margin-right:250px;
-    margin-bottom : 15px;
-}
-.nwp{
-    display: flex;
-    align-items: center;
-
-
-
+    bottom: 0;
 }
