@@ -49,7 +49,7 @@ li a{
 
 .round{
     width: 300px; /* Set the width */
-    height: 300px; /* Set the height */
+    height: 310px; /* Set the height */
     border-radius: 50%; /* This makes it round */
     object-fit: cover; /* Ensures the image scales well */
 
@@ -102,8 +102,7 @@ p,em,strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 5px;
 
 }
 
