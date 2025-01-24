@@ -44,9 +44,11 @@ a{
     border-radius: 15px;
     border : #ffffff;
     position: relative;
-    margin-left:80px;
-
-
+}
+.t-top{
+    display: flex;
+    align-items: center;
+    gap:5px ;
 
 }
 
