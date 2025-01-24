@@ -17,6 +17,7 @@ li a{
     gap:2rem;
     list-style: none;
     font-size: 1.5rem;
+
 }
 .web-links {
     display: flex;
@@ -101,7 +102,8 @@ p,em,strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 10px;
+
 
 }
 
