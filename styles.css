@@ -43,12 +43,12 @@ a{
 .top-button{
     border-radius: 15px;
     border : #ffffff;
-    position: relative;
 }
 .t-top{
     display: flex;
     align-items: center;
     margin-left:10px;
+    justify-content: space-between;
 }
 
 
