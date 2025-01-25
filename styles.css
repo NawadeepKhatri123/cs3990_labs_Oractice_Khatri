@@ -54,7 +54,7 @@ a{
 
 .pp{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     position: relative;
 }
@@ -243,4 +243,13 @@ ul {
     height: 70px; /* Fixed height for each image */
     width: 70px; /* Fixed width for each image */
     object-fit: cover; /* Ensures the image fits within the box */
+}
+.experience{
+    border-bottom: 1px solid #ff6347;
+}
+.Profile12{
+    border-bottom: 1px solid red;
+}
+.xux{
+    border-bottom: 1px solid red;
 }
