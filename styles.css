@@ -220,7 +220,6 @@ ul {
 }
 
 
-/* Assingment 3 css */
 
 .round{
     width: 300px;
@@ -236,7 +235,6 @@ ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Button 2 with a different gradient */
 .no-underline1 {
     background: radial-gradient(circle, #6dd5ed, #2193b0);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
