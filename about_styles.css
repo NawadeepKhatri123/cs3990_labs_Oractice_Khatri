@@ -96,15 +96,16 @@ ul {
     list-style-type: lowercase;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+
+
+/* Style the first element of an ordered list */
+ol li:first-of-type {
+    color: red; /* Change to any color */
+    font-weight: bold;
 }
-.hello{
-    border: 3px solid red;
+
+/* Style the last paragraph in a container */
+p:last-child {
+    color: green; /* Change to any color */
+    font-style: italic;
 }

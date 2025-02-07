@@ -55,14 +55,23 @@ li a{
 }
 
 
+/* General styling for headers */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: block; /* Ensures the background covers full width */
+    width: 100%;   /* Ensures full width coverage */
+    margin: 0;     /* Removes default margin */
+}
+
+/* Apply a dynamic linear gradient to even headers */
 h2:nth-of-type(even),
 h4:nth-of-type(even),
 h6:nth-of-type(even) {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Warm gradient */
 }
+
 H2{
     font-size: 40px;
     text-align: center;
