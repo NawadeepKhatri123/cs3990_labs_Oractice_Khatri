@@ -45,3 +45,6 @@ p:nth-of-type(even)::before {
     font-size: 16px;
     color: blue;  /* Change the color if needed */
 }
+p:not(.spec_p):not(:last-of-type){
+    font-size:20px;
+}
