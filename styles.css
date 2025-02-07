@@ -248,11 +248,25 @@ ul {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-.sticky-but1::after{
-    content: "⚡";
-    display : none;
-
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 20px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
 }
-.sticky-but2::after{
-    display: inline;
+
+a span.icon {
+    margin-left: 10px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+}
+
+a:hover span.icon {
+    opacity: 1;
+    transform: translateX(0);
 }
