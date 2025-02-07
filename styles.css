@@ -275,3 +275,24 @@ ul {
 .sticky-but1:hover img.hover ,.sticky-but2:hover img.hover{
     display : block;
 }
+.chain{
+    list-style:none;
+    padding:0;
+    display: flex;
+}
+.chain li{
+    margin-right: 5px;
+    font-size: 18px;
+
+}
+.chain li:first-child::before{
+    content: " >> ";
+    color: white;
+}
+.chain li::after{
+    content: " / ";
+    color:white;
+}
+.chain li:last-child::after{
+    content: "";
+}
