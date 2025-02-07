@@ -251,7 +251,7 @@ ul {
 .sticky-but1 img.default{
     display: block;
 }
-.sticky-but1 img.hover{
+.sticky-but2 img.hover{
     display: none;
 }
 .sticky-but2 img.default{
@@ -263,6 +263,6 @@ ul {
 .sticky-but1:hover img.default, .sticky-but2:hover img.default{
     display : none;
 }
-.sticky-but2:hover img.hover ,.sticky-but1:hover img.hover{
-    display: block;
+.sticky-but1:hover img.hover ,.sticky-but2:hover img.hover{
+    display : block;
 }
