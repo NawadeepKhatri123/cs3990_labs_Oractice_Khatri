@@ -248,15 +248,17 @@ ul {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-.sticky-but1:hover::after{
-    content: url("/images/fingerup.png"); /* Replace with your image URL */
-    background-size: 20px 20px;
+.sticky-but1 img.default{
+    display: block;
 }
-.sticky-but2:hover::after{
-    content: url("/images/fingerdown.png");
-    background-size: 20px 20px;
+.sticky-but1 img.hover{
+    display: none;
 }
-.sticky-buttons img {
-    width: 28px;
-    height: 28px; /* Recommended size for hover icons */
+.sticky-but2 img.default{
+    display: block;
 }
+.sticky-but1 img.hover{
+    display: none;
+}
+.sticky-but1 img.default, .sticky-but2 img.default{display : none;}
+.sticky-but2 img.hover ,.sticky-but1 img.hover{ display: block;}
