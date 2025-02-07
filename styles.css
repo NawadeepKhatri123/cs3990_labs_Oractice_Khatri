@@ -248,3 +248,11 @@ ul {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+.sticky-but1::after{
+    content: "⚡";
+    display : none;
+
+}
+.sticky-but2::after{
+    display: inline;
+}
