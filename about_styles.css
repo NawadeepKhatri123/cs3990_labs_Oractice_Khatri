@@ -109,3 +109,24 @@ p:last-child {
     color: green; /* Change to any color */
     font-style: italic;
 }
+.chain{
+    list-style:none;
+    padding:0;
+    display: flex;
+}
+.chain li{
+    margin-right: 5px;
+    font-size: 18px;
+
+}
+.chain li:first-child::before{
+    content: " >> ";
+    color: white;
+}
+.chain li::after{
+    content: " / ";
+    color:white;
+}
+.chain li:last-child::after{
+    content: "";
+}

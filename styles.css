@@ -232,7 +232,7 @@ ul {
     border: 5px solid red;
 }
 .no-underline1 {
-    background: radial-gradient(circle, #ff7e5f, #feb47b);
+    background: radial-gradient(circle, mediumvioletred, #feb47b);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
