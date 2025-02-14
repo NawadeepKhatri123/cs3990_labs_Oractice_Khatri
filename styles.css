@@ -214,6 +214,75 @@ header {
     height: auto;
     object-fit: contain;
 }
+.job-card {
+    background-color: #a020f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.label {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+
+.popular {
+    background-color: red;
+}
+
+.new {
+    background-color: limegreen;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.popular-bar {
+    background-color: red;
+    width: 70%;
+}
+
+.new-bar {
+    background-color: limegreen;
+    width: 50%;
+}
+
+/* Move descriptions outside the job-card */
+.description {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+.salary {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.rights {
+    float: right;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
