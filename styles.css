@@ -145,24 +145,32 @@ header {
     margin-top: 10px;
 }
 
-/* Target-based display */
-#home:target {
+/* Display the Canada flag by default */
+#home {
     display: grid;
 }
 
+/* Hide the Canada flag when another section is targeted */
+#home:target {
+    display: none;
+}
+
+/* Hide all other sections by default */
+#Get,
+#provinces {
+    display: none;
+}
+
+/* Show the "Get to know Canada" content when targeted */
+#Get:target {
+    display: block;
+}
+
+/* Show the "Provinces and Territories" content when targeted */
 #provinces:target {
     display: block;
 }
 
-/* Default state - show home when no target */
-#home:not(:target):not(:only-child),
-.content:target {
-    display: none;
-}
-
-#home:not(:target):only-child {
-    display: grid;
-}
 
 /* Province List Styling */
 .province-list {
