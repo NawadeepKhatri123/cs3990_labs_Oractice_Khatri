@@ -1,324 +1,131 @@
-* {
-    color: rgb(1, 1, 69);
-    background-color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    line-height : 1.2;
-    color: #ffffff;
-}
-li a{
-    text-decoration: none;
-}
-
-.web-links{
-    list-style: inside;
-}
-
-.web-links{
-    gap:2rem;
-    list-style: none;
-    font-size: 1.5rem;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-}
-.web-links {
-    display: flex;
-    justify-content: flex-end;
-}
-.sticky-buttons {
-    position: fixed;
-    top: 44%;
-    right: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    margin-left: auto;
-}
-.but1{
-    border-radius: 15px;
-    border : #06283D;
-    border-color: black;
-}
-.top-button{
-    border-radius: 15px;
-    border : #06283D;
-    position: relative;
-    left: 30px;
-
-
+    padding: 0;
 }
 
-
-.pp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-
-/* General styling for headers */
-h1, h2, h3, h4, h5, h6 {
+header {
+    background-color: purple;
+    color: white;
     text-align: center;
     padding: 20px;
-    color: white;
-    display: block; /* Ensures the background covers full width */
-    width: 100%;   /* Ensures full width coverage */
-    margin: 0;     /* Removes default margin */
 }
 
-/* Apply a dynamic linear gradient to even headers */
-h2:nth-of-type(even),
-h4:nth-of-type(even),
-h6:nth-of-type(even) {
-    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Warm gradient */
+nav {
+    background-color: #444;
 }
 
-H2{
-    font-size: 40px;
-    text-align: center;
-
-}
-H5{
-    text-align: center;
-    font-size: 30px;
-}
-p,em,strong{
-    color: white;
-    text-align: center;
-    font-size: 10px;
-}
-
-.logo{
-
-    height: 40px;
-
-}
-.name-add{
-    font-size: 20px;
-}
-
-
-.profile-web{
-    gap:10rem;
+/* Menu using Grid */
+.menu {
     list-style: none;
-    font-size: 15px;
-}
-.profile-web {
-
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: center;
 }
-.education{
-    gap:10rem;
-    list-style: none;
-    font-size: 15px;
-}
-.education {
 
-    justify-content: center;
-}
-.container{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-
+.menu li {
+    position: relative;
 }
 
-.jobs {
-    display: flex;
-    justify-content: center;
-    gap: 2rem; /* Adjusted the gap to make the layout more flexible */
-    list-style: none;
-    font-size: 20px;
-    padding: 0; /* Removed default padding from <ul> */
-}
-
-.company {
-    width:350px;
-    background: black;
-    padding: 2rem;
-    border-radius: 2rem;
-    border: 0.1rem solid #333333;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.job-details, .job-details1 {
-    list-style: none;
-    font-size: 15px;
-    padding: 0; /* Remove default padding */
-    margin-top: 2rem; /* Add spacing between job title and details */
-}
-
-.job-details li, .job-details1 li {
-    margin-bottom: 0.5rem; /* Add some space between each job description item */
-}
-
-.button {
-    background-color: #06283D; /* Green */
-    border: white;
-
-    color: #eeeae3;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    font-weight:bold;
-
-}
-.button1 {
-    border-radius: 12px;
-    opacity: 0.9;
-}
-.header{
-    text-align: center;
-    line-height: 1.5;
-}
-
-
-.small-text {
-    font-size: 0.8em; /* Adjust size relative to the parent font */
-    color: white; /* Optional: change color for emphasis */
-}
-ul {
-    font-size: 10px; /* Adjust the font size here */
-    text-align: center;
-}
-.skills{
-
-    padding: 2rem 1.5rem;
-    border-radius: 1rem;
-    align-items: center;
-}
-.skills__title{
-
-    text-align: center;
-}
-
-.skill-container {
-    display: flex;
-    justify-content: center; /* Align items horizontally in the center */
-    align-items: center; /* Align items vertically in the center */
-    gap: 1rem; /* Adds space between the images */
-}
-
-.skill-icon {
-    background: black;
-    padding: 0.5rem; /* Adjust padding inside each image */
-    border-radius: 3rem; /* Rounded corners */
-    border: 0.1rem solid #333333; /* Light border around the image */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Optional shadow */
-    height: 70px; /* Fixed height for each image */
-    width: 70px; /* Fixed width for each image */
-    object-fit: cover; /* Ensures the image fits within the box */
-}
-
-
-ul:not(.spec_item){
-    font-family: "Roboto Thin",monospace;
-}
-.round{
-    width: 300px;
-    height: 310px;
-    border-radius: 50%;
-    transition:border 0.3s ease;
-}
-.round:hover{
-    border: 5px solid red;
-}
-.no-underline1 {
-    background:  radial-gradient(circle, red 20%, orange 50%, yellow 80%);
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);;
-}
-
-.no-underline2 {
-    background: conic-gradient(from 0deg at 50% 50%, #ff0080, #7928CA,#ff0080);
-}
-.no-underline1 {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 12px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-align: center;
-}
-/* Hover effect */
-.no-underline1:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-.sticky-but1 img.default{
+.menu a {
     display: block;
-}
-.sticky-but2 img.hover{
-    display: none;
-}
-.sticky-but2 img.default{
-    display: block;
-}
-.sticky-but1 img.hover{
-    display: none;
-}
-.sticky-but1:hover img.default, .sticky-but2:hover img.default{
-    display : none;
-}
-.sticky-but1:hover img.hover ,.sticky-but2:hover img.hover{
-    display : block;
-}
-.chain{
-    list-style:none;
-    padding:0;
-    display: flex;
-}
-.chain li{
-    margin-right: 5px;
-    font-size: 18px;
-
-}
-.chain li:first-child::before{
-    content: " >> ";
+    padding: 15px 20px;
     color: white;
-}
-.chain li::after{
-    content: " / ";
-    color:white;
-}
-.chain li:last-child::after{
-    content: "";
-}
-h1:nth-of-type(odd),
-h3:nth-of-type(odd),
-h5:nth-of-type(odd) {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    text-decoration: none;
 }
 
-h1:nth-of-type(odd)::before,
-h1:nth-of-type(odd)::after,
-h3:nth-of-type(odd)::before,
-h3:nth-of-type(odd)::after,
-h5:nth-of-type(odd)::before,
-h5:nth-of-type(odd)::after {
-    content: "";
-    height: 1px;
-    width: 100px;
-    background-color: white;
+.menu a:hover {
+    background-color: #222;
 }
-h2:nth-of-type(even) {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+/* Dropdown Submenu */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #666;
+    list-style: none;
+    padding: 0;
+}
+
+.submenu li a {
     padding: 10px;
-    border-radius: 5px;
-    color: white;
+    display: block;
+}
+
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+
+/* Content Sections */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Province List using Grid */
+.province-list {
+    list-style: none;
+    padding: 0;
+}
+
+.province-list li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.province-list img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.province-list .info {
+    display: none;
+    font-style: italic;
+}
+
+.province-list li:hover .info {
+    display: inline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack the menu items vertically on smaller screens */
+    .menu {
+        grid-auto-flow: row;
+        justify-items: center;
+    }
+
+    .submenu {
+        position: static;
+    }
+
+    /* Change province list to a single column */
+    .province-list li {
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+        justify-items: start;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .menu a {
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
 }
