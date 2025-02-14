@@ -196,7 +196,7 @@ header {
 }
 /* IT Jobs Section (Right Side) */
 .jobs {
-    background: #f3f3f3;
+    background: plum;
     padding: 20px;
     border-radius: 8px;
     width: 100%;
@@ -214,76 +214,80 @@ header {
     height: auto;
     object-fit: contain;
 }
-.job-card {
-    background-color: #a020f0;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
+.right {
+    background-color:plum;
+    color: #ffffff;
+    text-align: center;
 }
 
-.job-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 10px;
+.right section{
+    float: left;
+    padding: 2%;
+    font-size: 0.7em;
+    margin: auto;
+    margin-bottom: 1%;
+    min-height: 250px;
 }
 
-.label {
-    padding: 5px 10px;
-    font-size: 14px;
+.top {
+    border: 3px double #666;
+    background-color: #9723d1;
+    color: #fff;
+    text-align: center;
+    min-height: 80px;
+    padding:1%;
+    border-top-right-radius: 20px;
+}
+
+.promo {
+    width: 80%;
+    text-align: left;
+    text-transform: uppercase;
+    border-radius: 0 15px 15px 0;
+}
+
+.new{
+    background-color: rgb(153, 248, 58);
+    color:rgb(15, 104, 3);
     font-weight: bold;
-    border-radius: 5px;
-    color: white;
 }
 
-.popular {
-    background-color: red;
+.popular{
+    background-color: rgb(143, 6, 6);
+    font-weight: bold;
 }
 
-.new {
-    background-color: limegreen;
-}
-
-.progress-bar {
-    height: 10px;
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.popular-bar {
-    background-color: red;
-    width: 70%;
-}
-
-.new-bar {
-    background-color: limegreen;
-    width: 50%;
-}
-
-/* Move descriptions outside the job-card */
-.description {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: -10px;
-}
 
 .salary {
-    font-size: 18px;
+    text-align: right;
     font-weight: bold;
 }
 
-footer {
-    margin-top: 50px;
-    font-size: 14px;
+.salary::before{
+    content: '$';
 }
 
-.rights {
-    float: right;
+.salary::after{
+    content: ' an hour';
+    font-style: italic;
 }
 
+.footer {
+    position: fixed;
+    bottom:0;
+    width:100%;
+    text-align: left;
+    color:  #4b1566;
+    font-weight: bold;
+    background-color:plum;
+    height: 40px;
+}
+
+.footer section{
+    width:40%;
+    margin: 1% auto;
+
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {

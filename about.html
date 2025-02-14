@@ -4,93 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Canada</title>
-    <link rel="stylesheet" href="about_styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<header>
+    <h1>About Canada</h1>
+</header>
+
+<!-- Main Grid Layout -->
 <div class="container">
-    <div class="content-wrapper">
-        <div class="main-content">
-            <div class="tab-container">
-                <div class="tab-menu">
-                    <a href="#tab1" class="tab-link">Overview</a>
-                    <a href="#tab2" class="tab-link">Provinces & Territories</a>
-                    <a href="#tab3" class="tab-link">My Alberta</a>
-                </div>
+    <!-- Left Section: General Info About Canada -->
+    <aside class="about-canada">
+        <ul class="about-canada-list">
+            <li class="nl">Canada has the longest coastline in the world.</li>
+            <li class="nl">It has 10 provinces and 3 territories.</li>
+            <li class="nl">Hockey is the most popular sport in Canada.</li>
+            <li class="nl">Canada has two official languages: English and French.</li>
+            <li class="nl">The maple leaf is the national symbol of Canada.</li>
+            <li class="nl">70% of the maple syrup comes from Canada.</li>
+            <li class="nl">The country spans six different time zones.</li>
+            <li class="nl">The country has more lakes than the rest of the world.</li>
+        </ul>
+    </aside>
 
-                <div class="tab-content">
-                    <!-- Default Tab Content -->
-                    <div id="tab1" class="tab-panel active">
-                        <img src="canada-default.jpg" alt="Welcome to Canada" class="default-image">
-                    </div>
+    <!-- Middle Section: Navigation & Main Content -->
+    <main class="main-content">
+        <nav>
+            <ul class="menu">
+                <li class="mnu"><a href="#home">Home</a></li>
+                <li class="mnu"><a href="#provinces">Provinces & Territories</a></li>
+                <li class="dropdown">
+                    <a href="#">My Alberta</a>
+                    <ul class="submenu">
+                        <li><a href="#culture">Public Holidays</a></li>
+                        <li><a href="#economy">Provincial Parks</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
-                    <!-- Provinces Tab Content -->
-                    <div id="tab2" class="tab-panel">
-                        <ul class="provinces-list">
-                            <li>
-                                <span class="flag-icon">🍁</span>
-                                Alberta
-                                <span class="province-info">Area: 661,848 km²</span>
-                            </li>
-                            <li>
-                                <span class="flag-icon">🍁</span>
-                                British Columbia
-                                <span class="province-info">Area: 944,735 km²</span>
-                            </li>
-                            <li>
-                                <span class="flag-icon">🍁</span>
-                                Ontario
-                                <span class="province-info">Area: 1,076,395 km²</span>
-                            </li>
-                            <li>
-                                <span class="flag-icon">🍁</span>
-                                Quebec
-                                <span class="province-info">Area: 1,542,056 km²</span>
-                            </li>
-                        </ul>
-                    </div>
+        <!-- Home Content -->
+        <section id="home" class="content">
+            <img src="/images/Canada.svg.jpg" alt="Welcome to Canada" class="canada">
+        </section>
 
-                    <!-- Alberta Tab Content -->
-                    <div id="tab3" class="tab-panel">
-                        <div class="alberta-menu">
-                            <a href="#alberta-tourism">Tourism</a>
-                            <a href="#alberta-education">Education</a>
-                            <a href="#alberta-living">Living</a>
-                        </div>
-                        <div id="alberta-tourism" class="alberta-content">
-                            <h3>Tourism in Alberta</h3>
-                            <p>Discover the beauty of the Rocky Mountains and more...</p>
-                        </div>
-                        <div id="alberta-education" class="alberta-content">
-                            <h3>Education in Alberta</h3>
-                            <p>World-class educational institutions...</p>
-                        </div>
-                        <div id="alberta-living" class="alberta-content">
-                            <h3>Living in Alberta</h3>
-                            <p>High quality of life and vibrant communities...</p>
-                        </div>
+        <!-- Provinces Content -->
+        <section id="provinces" class="content">
+            <ul class="province-list">
+                <li class="province-item">
+                    <img src="/images/alberta.png" alt="Alberta Flag">
+                    Alberta
+                    <div class="province-info">Area: 661,848 km² - Capital: Edmonton</div>
+                </li>
+                <li class="province-item">
+                    <img src="/images/BC.png" alt="British Columbia Flag">
+                    British Columbia
+                    <div class="province-info">Area: 944,735 km² - Capital: Victoria</div>
+                </li>
+                <li class="province-item">
+                    <img src="/images/mani.png" alt="Manitoba Flag">
+                    Manitoba
+                    <div class="province-info">Area: 647,797 km² - Capital: Winnipeg</div>
+                </li>
+                <li class="province-item">
+                    <img src="/images/onta.png" alt="Ontario Flag">
+                    Ontario
+                    <div class="province-info">Area: 1,076,395 km² - Capital: Toronto</div>
+                </li>
+                <li class="province-item">
+                    <img src="/images/qubec.png" alt="Quebec Flag">
+                    Quebec
+                    <div class="province-info">Area: 1,542,056 km² - Capital: Quebec City</div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Alberta Content -->
+        <section id="culture" class="content">
+            <h2>Public Holidays</h2>
+            <p>New Year's Day, Family Day, Good Friday, Canada Day, Thanksgiving, Christmas Day, and more!</p>
+        </section>
+
+        <section id="economy" class="content">
+            <h2>Provincial Parks</h2>
+            <p>Explore Banff National Park, Jasper National Park, and many beautiful parks in Alberta.</p>
+        </section>
+    </main>
+
+    <div class="col-3 right">
+        <h3>IT jobs & work opportunities</h3>
+
+        <div class="jobs-grid">
+            <section class="col-4">
+                <article class="jobs">
+                    <div class="top">
+                        <div class="promo popular">Most popular</div>
+                        <h3>Cybersecurity Analyst</h3>
                     </div>
-                </div>
-            </div>
+                </article>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a metus eget magna varius tincidunt malesuada pellentesque augue.
+                </p>
+                <div class="salary">52.03</div>
+            </section>
+
+            <section class="col-4">
+                <article class="jobs">
+                    <div class="top">
+                        <div class="promo new">New</div>
+                        <h3>IT Technician</h3>
+                    </div>
+                </article>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="salary">38.5</div>
+            </section>
+
+            <section class="col-4">
+                <article class="jobs">
+                    <div class="top">
+                        <div class="promo new">New</div>
+                        <h3>Senior Business IT Analyst</h3>
+                    </div>
+                </article>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="salary">120.0</div>
+            </section>
         </div>
-
-        <aside class="jobs-section">
-            <h2>IT Jobs & Work Opportunities</h2>
-            <div class="job-card">
-                <h3>Software Developer</h3>
-                <p class="location">Calgary, AB</p>
-                <p class="job-type">Full-time</p>
-                <p class="salary">$80,000 - $100,000</p>
-                <a href="#" class="apply-btn">Apply Now</a>
-            </div>
-            <div class="job-card">
-                <h3>Web Designer</h3>
-                <p class="location">Edmonton, AB</p>
-                <p class="job-type">Contract</p>
-                <p class="salary">$70,000 - $85,000</p>
-                <a href="#" class="apply-btn">Apply Now</a>
-            </div>
-        </aside>
     </div>
 </div>
+
+<div class="footer">
+    <section class="text-left">
+        &copy; 2025 | NWP &trade;
+    </section>
+    <section class="text-right">
+        All rights reserved
+    </section>
+</div>
+
 </body>
 </html>
