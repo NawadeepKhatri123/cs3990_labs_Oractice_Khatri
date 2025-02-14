@@ -4,11 +4,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* Prevent horizontal scrolling */
 html, body {
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
-
 
 /* Header */
 header {
@@ -16,28 +18,38 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
 /* Grid Layout */
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;  /* Three columns: Left (Facts) - Center (Main) - Right (Jobs) */
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 20px;
     padding: 20px;
+    max-width: 100%;
 }
 
 /* About Canada Section (Left Side) */
 .about-canada {
     border-radius: 8px;
+    width: 100%;
 }
-.about-canada-list{
+
+.about-canada-list {
     list-style: none;
     gap: 20px;
-
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
-.nl{
+
+.nl {
     background-color: plum;
     margin-bottom: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Navigation Menu (Centered) */
@@ -48,10 +60,12 @@ header {
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
+    width: 100%;
 }
 
 .menu li {
     position: relative;
+    width: 100%;
 }
 
 .menu a {
@@ -59,16 +73,19 @@ header {
     padding: 15px 20px;
     color: black;
     text-decoration: none;
+    text-align: center;
 }
 
 .menu a:hover {
     background-color: purple;
 }
-.mnu{
+
+.mnu {
     background-color: plum;
-    margin-right:5px;
+    margin-right: 5px;
 }
-.dropdown{
+
+.dropdown {
     background-color: plum;
 }
 
@@ -81,6 +98,8 @@ header {
     background: plum;
     list-style: none;
     padding: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .submenu li a {
@@ -94,67 +113,161 @@ header {
 }
 
 /* Province List */
+/* Previous CSS remains the same until the content section */
+
+/* Content Sections */
+.content {
+    display: none;
+    width: 100%;
+}
+
+/* Home Section */
+#home {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+#home img.canada {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Province Section */
+#provinces {
+    display: none;
+    width: 100%;
+}
+
+/* Target-based display */
+#home:target {
+    display: grid;
+}
+
+#provinces:target {
+    display: block;
+}
+
+/* Default state - show home when no target */
+#home:not(:target):not(:only-child),
+.content:target {
+    display: none;
+}
+
+#home:not(:target):only-child {
+    display: grid;
+}
+
+/* Province List Styling */
 .province-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-.province-list li {
-    display: grid;
-    grid-template-columns: auto 1fr;
+.province-item {
+    background-color: plum;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
     align-items: center;
-    padding: 10px;
 }
 
-.province-list img {
+.province-item img {
     width: 30px;
     height: 20px;
     margin-right: 10px;
 }
 
-.province-list .info {
+.province-info {
     display: none;
     font-style: italic;
+    color: #333;
+    margin-left: 10px;
 }
 
-.province-list li:hover .info {
+.province-item:hover .province-info {
     display: inline;
 }
-
 /* IT Jobs Section (Right Side) */
 .jobs {
     background: #f3f3f3;
     padding: 20px;
     border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
 }
-#home{
-    display:grid;
+
+#home {
+    display: grid;
     place-items: center;
+    width: 100%;
+}
+
+.canada {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
         display: grid;
-        grid-template-columns: 1fr; /* Stack all sections in a single column */
-        grid-template-rows: auto;
+        grid-template-columns: 1fr;
         gap: 20px;
+        padding: 10px;
+        width: 100%;
     }
 
-    /* Ensure the menu stays at the top */
+    .menu {
+        grid-auto-flow: row;
+        width: 100%;
+    }
 
+    .menu li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mnu {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .submenu {
+        position: static;
+        width: 100%;
+    }
 
     .about-canada {
-        order: 2; /* Facts about Canada comes after the menu */
+        order: 2;
+        width: 100%;
     }
 
     .main-content {
-        order: 1; /* The main content (Provinces, My Alberta, Image) */
+        order: 1;
         width: 100%;
-        margin: 0 auto;
     }
 
     .jobs {
-        order: 3; /* IT Jobs section should be last */
+        order: 3;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .menu a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .dropdown {
+        width: 100%;
     }
 }
