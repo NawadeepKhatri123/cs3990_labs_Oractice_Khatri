@@ -12,38 +12,48 @@
     <h1>About Canada</h1>
 </header>
 
-<nav>
-    <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#provinces">Provinces & Territories</a></li>
-        <li class="dropdown">
-            <a href="#">My Alberta</a>
-            <ul class="submenu">
-                <li><a href="#culture">Public Holidays</a></li>
-                <li><a href="#economy">Provincial Parks</a></li>
+<!-- Main Grid Layout -->
+<div class="container">
+    <!-- Left Section: General Info About Canada -->
+    <aside class="about-canada">
+        <ul>
+            <li>Canada has the longest coastline in the world.</li>
+            <li>It has 10 provinces and 3 territories.</li>
+            <li>Hockey is the most popular sport in Canada.</li>
+            <li>Canada has two official languages: English and French.</li>
+            <li>The maple leaf is the national symbol of Canada.</li>
+        </ul>
+    </aside>
+
+    <!-- Middle Section: Navigation & Main Content -->
+    <main class="main-content">
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#provinces">Provinces & Territories</a></li>
+                <li class="dropdown">
+                    <a href="#">My Alberta</a>
+                    <ul class="submenu">
+                        <li><a href="#culture">Public Holidays</a></li>
+                        <li><a href="#economy">Provincial Parks</a></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
+        </nav>
 
-    </ul>
-</nav>
 
-<section id="home" class="content">
-    <img src="/images/Canada.svg.jpg" alt="Welcome to Canada">
-</section>
 
-<section id="provinces" class="content">
-    <h2>Provinces & Territories</h2>
-    <ul class="province-list">
-        <li><img src="flag.png" alt="Flag"> Ontario <span class="info">- The most populous province</span></li>
-        <li><img src="flag.png" alt="Flag"> Quebec <span class="info">- French-speaking region</span></li>
-        <li><img src="flag.png" alt="Flag"> Alberta <span class="info">- Home of the Rocky Mountains</span></li>
-    </ul>
-</section>
+        <section id="home" class="content">
+            <img src="/images/Canada.svg.jpg" alt="Welcome to Canada" class = "canada" width="500" height="500">
+        </section>
+    </main>
 
-<section id="jobs" class="content">
-    <h2>IT Jobs & Work Opportunities</h2>
-    <p>Find job opportunities in Alberta's booming IT sector.</p>
-</section>
+    <!-- Right Section: IT Jobs -->
+    <aside class="jobs">
+        <h2>IT Jobs & Work Opportunities</h2>
+        <p>Find job opportunities in Alberta's booming IT sector.</p>
+    </aside>
+</div>
 
 </body>
 </html>

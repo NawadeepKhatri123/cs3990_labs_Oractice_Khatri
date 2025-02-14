@@ -4,7 +4,13 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+}
 
+
+/* Header */
 header {
     background-color: purple;
     color: white;
@@ -12,11 +18,22 @@ header {
     padding: 20px;
 }
 
-nav {
-    background-color: #444;
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;  /* Three columns: Left (Facts) - Center (Main) - Right (Jobs) */
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Menu using Grid */
+/* About Canada Section (Left Side) */
+.about-canada {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Navigation Menu (Centered) */
 .menu {
     list-style: none;
     padding: 0;
@@ -35,6 +52,7 @@ nav {
     padding: 15px 20px;
     color: white;
     text-decoration: none;
+    background-color: #444;
 }
 
 .menu a:hover {
@@ -55,19 +73,14 @@ nav {
 .submenu li a {
     padding: 10px;
     display: block;
+    color: white;
 }
 
 .menu .dropdown:hover .submenu {
     display: block;
 }
 
-/* Content Sections */
-.content {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Province List using Grid */
+/* Province List */
 .province-list {
     list-style: none;
     padding: 0;
@@ -95,37 +108,40 @@ nav {
     display: inline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* Stack the menu items vertically on smaller screens */
-    .menu {
-        grid-auto-flow: row;
-        justify-items: center;
-    }
-
-    .submenu {
-        position: static;
-    }
-
-    /* Change province list to a single column */
-    .province-list li {
-        grid-template-columns: 1fr;
-        row-gap: 5px;
-        justify-items: start;
-    }
+/* IT Jobs Section (Right Side) */
+.jobs {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+}
+#home{
+    display:grid;
+    place-items: center;
 }
 
-@media (max-width: 480px) {
-    header {
-        font-size: 18px;
-        padding: 10px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack all sections in a single column */
+        grid-template-rows: auto;
+        gap: 20px;
     }
 
-    .menu a {
-        padding: 10px;
+    /* Ensure the menu stays at the top */
+
+
+    .about-canada {
+        order: 2; /* Facts about Canada comes after the menu */
     }
 
-    .content {
-        padding: 10px;
+    .main-content {
+        order: 1; /* The main content (Provinces, My Alberta, Image) */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .jobs {
+        order: 3; /* IT Jobs section should be last */
     }
 }
