@@ -227,6 +227,7 @@ header {
     margin: auto;
     margin-bottom: 1%;
     min-height: 250px;
+    align-content: flex-start;
 }
 
 .top {
