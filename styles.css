@@ -61,11 +61,14 @@ header {
     grid-auto-flow: column;
     justify-content: center;
     width: 100%;
+    gap: 5px;
 }
 
 .menu li {
     position: relative;
     width: 100%;
+
+
 }
 
 .menu a {
@@ -85,7 +88,7 @@ header {
     margin-right: 5px;
 }
 
-.dropdown {
+.dropdown {gap:10px;
     background-color: plum;
 }
 
@@ -167,10 +170,9 @@ header {
 }
 
 .province-item {
-    background-color: plum;
     padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-bottom: 5px;
+
     position: relative;
     display: flex;
     align-items: center;
