@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Canada</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- A head section that includes metadata -->
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8" />
+    <!-- Setting the viewport to make your website look good on all devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The folllowing forces Internet Explorer to use the newest rendering engine available on the user’s computer,
+      rather than older compatibility modes.
+      This ensures that your webpage is displayed using the latest standards-compliant engine, improving both performance and design consistency-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Define a description of your web page-->
+    <meta name="description" content="Assignment 4: box-model and media queries in CSS3" />
+    <meta name="author" content="Hanna" />
+    <title>cs3990: CSS3 media</title>
+    <link
+            rel="icon"
+            type="image/x-icon"
+            href="Favicons\favicon-96x96.png"
+            sizes="96x96"
+    />
+    <link rel="stylesheet" href="Styles\styles.css" />
 </head>
+
 <body>
-
-<header>
+<div class="header">
     <h1>About Canada</h1>
-</header>
+</div>
 
-<!-- Main Grid Layout -->
-<div class="container">
-    <!-- Left Section: General Info About Canada -->
-    <aside class="about-canada">
-        <ul class="about-canada-list">
-            <li class="nl">Canada has the longest coastline in the world.</li>
-            <li class="nl">It has 10 provinces and 3 territories.</li>
-            <li class="nl">Hockey is the most popular sport in Canada.</li>
-            <li class="nl">Canada has two official languages: English and French.</li>
-            <li class="nl">The maple leaf is the national symbol of Canada.</li>
-            <li class="nl">70% of the maple syrup comes from Canada.</li>
-            <li class="nl">The country spans six different time zones.</li>
-            <li class="nl">The country has more lakes than the rest of the world.</li>
+<div class="main">
+    <div class="col-1 menu">
+        <ul>
+            <li>Canada is actually HUGE</li>
+            <li>71% of the world's maple syrup comes from Canada</li>
+            <li>The Canada-US border is the longest international border between two countries in the world 🇺🇸</li>
+            <li>The country spans six different time zones</li>
+            <li>The country has more lakes than the rest of the world combined</li>
         </ul>
-    </aside>
+    </div>
 
-    <!-- Middle Section: Navigation & Main Content -->
-    <main class="main-content">
-        <nav>
-            <ul class="menu">
-                <li class="mnu"><a href="#Get">Home</a></li>
-                <li class="mnu"><a href="#provinces">Provinces & Territories</a></li>
-                <li class="dropdown">
-                    <a href="#">My Alberta</a>
-                    <ul class="submenu">
-                        <li><a href="#culture">Public Holidays</a></li>
-                        <li><a href="#economy">Provincial Parks</a></li>
-                    </ul>
+    <div class="col-2 content tab">
+        <nav class="menu">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Provinces">Provinces and territories</a></li>
+                <li class="dropdown"><a href="#myAlberta">My Alberta</a>
+                    <div class="dropdown-content">
+                        <a href="#AB_holidays">Public holidays</a>
+                        <a href="#AB_parks">Provincial parks</a>
+                    </div>
+
                 </li>
             </ul>
         </nav>
-
-        <!-- Home Content -->
-        <section id="home" class="content">
-            <img src="/images/Canada.svg.jpg" alt="Welcome to Canada" class="canada" width="400" height="400">
-        </section>
-        <section id="Get" class="content">
-            <h2><strong>Get to know Canada</strong></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores
-                esse illum in ipsam! Consequuntur eligendi molestiae perferendis quis voluptatum?</p>
-        </section>
-        <!-- Provinces Content -->
-        <section id="provinces" class="content">
-            <ul class="province-list">
-                <li class="province-item">
-                    <img src="/images/alberta.png" alt="Alberta Flag">
-                    Alberta
-                    <div class="province-info">Area: 661,848 km² - Capital: Edmonton</div>
-                </li>
-                <li class="province-item">
-                    <img src="/images/BC.png" alt="British Columbia Flag">
-                    British Columbia
-                    <div class="province-info">Area: 944,735 km² - Capital: Victoria</div>
-                </li>
-                <li class="province-item">
-                    <img src="/images/mani.png" alt="Manitoba Flag">
-                    Manitoba
-                    <div class="province-info">Area: 647,797 km² - Capital: Winnipeg</div>
-                </li>
-                <li class="province-item">
-                    <img src="/images/onta.png" alt="Ontario Flag">
-                    Ontario
-                    <div class="province-info">Area: 1,076,395 km² - Capital: Toronto</div>
-                </li>
-                <li class="province-item">
-                    <img src="/images/qubec.png" alt="Quebec Flag">
-                    Quebec
-                    <div class="province-info">Area: 1,542,056 km² - Capital: Quebec City</div>
-                </li>
+        <article id="Home">
+            <h1>Get to know Canada</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a metus eget magna varius tincidunt malesuada pellentesque augue. Proin sit amet augue sed mauris rutrum imperdiet. Pellentesque hendrerit, lectus ac malesuada rutrum, nibh metus malesuada mauris, sed rutrum purus tellus pharetra justo. Vestibulum bibendum, metus eu semper tempus, ex elit sollicitudin nisi, eget maximus massa justo eget mauris. Vivamus pharetra nisi ac auctor dictum. Vestibulum interdum tempor lacus quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et lacus massa. Ut a odio libero. Ut id est laoreet, euismod nulla in, tincidunt turpis. Donec eu massa quam.
+            </p>
+        </article>
+        <article id="Provinces">
+            <h1>Learn more about Canada’s provinces and territories</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a metus eget magna varius tincidunt malesuada pellentesque augue. Proin sit amet augue sed mauris rutrum imperdiet. Pellentesque hendrerit, lectus ac malesuada rutrum, nibh metus malesuada mauris, sed rutrum purus tellus pharetra justo. Vestibulum bibendum, metus eu semper tempus, ex elit sollicitudin nisi, eget maximus massa justo eget mauris. Vivamus pharetra nisi ac auctor dictum. Vestibulum interdum tempor lacus quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et lacus massa. Ut a odio libero. Ut id est laoreet, euismod nulla in, tincidunt turpis. Donec eu massa quam.
+            <ul id="Province_list">
+                <li id="Alberta"><img src="/Images/Alberta_flag.png"> Alberta</li>
+                <li id="BritishColumbia"><img src="/Images/BC_flag.png"> British Columbia</li>
             </ul>
+            </p>
+        </article>
+        <article id="myAlberta">
+            <h1>Learn about Alberta</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a metus eget magna varius tincidunt malesuada pellentesque augue. Proin sit amet augue sed mauris rutrum imperdiet. Pellentesque hendrerit, lectus ac malesuada rutrum, nibh metus malesuada mauris, sed rutrum purus tellus pharetra justo. Vestibulum bibendum, metus eu semper tempus, ex elit sollicitudin nisi, eget maximus massa justo eget mauris. Vivamus pharetra nisi ac auctor dictum. Vestibulum interdum tempor lacus quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et lacus massa. Ut a odio libero. Ut id est laoreet, euismod nulla in, tincidunt turpis. Donec eu massa quam.
+            </p>
+        </article>
+        <article id="AB_holidays">
+            <h2>Alberta public holidays</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a metus eget magna varius tincidunt malesuada pellentesque augue. Proin sit amet augue sed mauris rutrum imperdiet. Pellentesque hendrerit, lectus ac malesuada rutrum, nibh metus malesuada mauris, sed rutrum purus tellus pharetra justo. Vestibulum bibendum, metus eu semper tempus, ex elit sollicitudin nisi, eget maximus massa justo eget mauris. Vivamus pharetra nisi ac auctor dictum. Vestibulum interdum tempor lacus quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et lacus massa. Ut a odio libero. Ut id est laoreet, euismod nulla in, tincidunt turpis. Donec eu massa quam.
+            </p>
+        </article>
+        <article id="AB_parks">
+            <h2>National and Provincial Parks in Alberta</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a metus eget magna varius tincidunt malesuada pellentesque augue. Proin sit amet augue sed mauris rutrum imperdiet. Pellentesque hendrerit, lectus ac malesuada rutrum, nibh metus malesuada mauris, sed rutrum purus tellus pharetra justo. Vestibulum bibendum, metus eu semper tempus, ex elit sollicitudin nisi, eget maximus massa justo eget mauris. Vivamus pharetra nisi ac auctor dictum. Vestibulum interdum tempor lacus quis pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus et lacus massa. Ut a odio libero. Ut id est laoreet, euismod nulla in, tincidunt turpis. Donec eu massa quam.
+            </p>
+        </article>
+        <section>
+            <img src="Images\Flag_map_of_Canada.png" id="Flag_map_of_Canada">
         </section>
-    </main>
+
+
+    </div>
 
     <div class="col-3 right">
         <h3>IT jobs & work opportunities</h3>
@@ -96,7 +105,7 @@
                 </div>
             </article>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a metus eget magna varius tincidunt malesuada pellentesque augue.
             </p>
             <div class="salary">52.03</div>
         </section>
@@ -122,7 +131,7 @@
                 </div>
             </article>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class="salary">120.0</div>
         </section>
@@ -130,6 +139,7 @@
 
     </div>
 </div>
+
 <div class="footer">
     <section class="text-left">
         &copy; 2025 |  NWP &trade;
@@ -138,6 +148,11 @@
         All rights reserved
     </section>
 </div>
+
+
+
+
+
 
 </body>
 </html>
