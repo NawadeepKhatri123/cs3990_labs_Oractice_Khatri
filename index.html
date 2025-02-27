@@ -1,186 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- A head section that includes metadata -->
-    <!-- Specifies the character encoding for the HTML document -->
-    <meta charset="UTF-8" />
-    <!-- Setting the viewport to make your website look good on all devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- The folllowing forces Internet Explorer to use the newest rendering engine available on the user’s computer,
-      rather than older compatibility modes.
-      This ensures that your webpage is displayed using the latest standards-compliant engine, improving both performance and design consistency-->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--Define a description of your web page-->
-    <meta name="description" content="Assignment 4: box-model and media queries in CSS3" />
-    <meta name="author" content="Hanna" />
-    <title>cs3990: CSS3 media</title>
-    <link
-            rel="icon"
-            type="image/x-icon"
-            href="Favicons\favicon-96x96.png"
-            sizes="96x96"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>CS NWP Programs Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-<div class="header">
-    <h1>About Canada</h1>
-</div>
-
-<div class="main">
-    <div class="col-1 menu">
-        <ul>
-            <li class="nl">Canada has the longest coastline in the world.</li>
-            <li class="nl">It has 10 provinces and 3 territories.</li>
-            <li class="nl">Hockey is the most popular sport in Canada.</li>
-            <li class="nl">Canada has two official languages: English and French.</li>
-            <li class="nl">The maple leaf is the national symbol of Canada.</li>
-            <li class="nl">70% of the maple syrup comes from Canada.</li>
-            <li class="nl">The country spans six different time zones.</li>
-            <li class="nl">The country has more lakes than the rest of the world.</li>
-        </ul>
-    </div>
-
-    <div class="col-2 content tab">
-        <nav class="menu">
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#provinces">Provinces and territories</a></li>
-                <li class="dropdown"><a href="#myAlberta">My Alberta</a>
-                    <div class="dropdown-content">
-                        <a href="#AB_holidays">Holidays</a>
-                        <a href="#AB_parks">Parks</a>
-                    </div>
-
-                </li>
-            </ul>
+<!-- Full-width Header -->
+<header>
+    <div class="header-content">
+        <h1>Welcome to CS NWP Programs</h1>
+        <nav>
+            <!-- Clicking "Browse NWP programs" scrolls to the first program card -->
+            <a href="#program1" class="nav-link">Browse NWP programs</a>
+            <a href="https://www.nwpwebsite.com" target="_blank" class="nav-link">Visit NWP website</a>
         </nav>
-        <article id="Home">
-            <h1>Get to know Canada</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur cum eius error facilis labore
-                laboriosam modi molestias quod sint. Dicta labore maxime nulla quisquam tenetur? Asperiores dolorum ipsum nesciunt voluptas. Aperiam consectetur
-                culpa deleniti dolorem ducimus eligendi facere laudantium nam nulla odio porro rem rerum sunt ullam, voluptate voluptatem. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Accusamus aliquam autem consectetur magnam omnis saepe sequi sit soluta suscipit voluptates?
-            </p>
-        </article>
-        <article id="provinces">
-            <h1>Learn more about Canada’s provinces and territories</h1>
-            <ul id="province-list">
-                <li class="province-item">
-                    <img src="/images/alberta.png" alt="Alberta Flag">
-                    Alberta
-                    <div class="province-info">Area: 661,848 km² - Capital: Edmonton</div>
-                </li><br>
-                <li class="province-item">
-                    <img src="/images/BC.png" alt="British Columbia Flag">
-                    British Columbia
-                    <div class="province-info">Area: 944,735 km² - Capital: Victoria</div>
-                </li><br>
-                <li class="province-item">
-                    <img src="/images/mani.png" alt="Manitoba Flag">
-                    Manitoba
-                    <div class="province-info">Area: 647,797 km² - Capital: Winnipeg</div>
-                </li><br>
-                <li class="province-item">
-                    <img src="/images/onta.png" alt="Ontario Flag">
-                    Ontario
-                    <div class="province-info">Area: 1,076,395 km² - Capital: Toronto</div>
-                </li><br>
-                <li class="province-item">
-                    <img src="/images/qubec.png" alt="Quebec Flag">
-                    Quebec
-                    <div class="province-info">Area: 1,542,056 km² - Capital: Quebec City</div>
-                </li>
-            </ul>
-        </article>
-        <article id="myAlberta">
-            <h1>Learn about Alberta</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam laudantium libero nemo neque nisi quis quod totam! Asperiores atque cumque dolorem doloremque dolorum
-                ex iste magni minus modi, natus nulla quibusdam quidem quos reprehenderit, ut
-                veritatis voluptatibus. Aspernatur inventore iste laudantium nam nulla obcaecati, pariatur ratione repudiandae sit temporibus.
-            </p>
-        </article>
-        <article id="AB_holidays">
-            <h2>Alberta holidays</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nihil non odit recusandae tempora? Aut autem consequatur consequuntur culpa cupiditate dicta, dignissimos doloremque eveniet
-                fuga illum incidunt laboriosam laudantium magni minus neque nobis pariatur quisquam ratione sapiente
-                similique sit sunt totam unde velit vero voluptatibus, voluptatum. Accusantium alias architecto culpa fugit harum inventore ipsam, libero magnam mollitia optio, quidem quisquam!
-            </p>
-        </article>
-        <article id="AB_parks">
-            <h2>Parks in Alberta</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eveniet excepturi facere perferendis? Ad doloribus expedita libero molestias nobis perferendis quas, voluptas voluptate.
-                A architecto dolores eligendi minus optio, possimus repellat totam vel. Accusamus animi aspernatur at consectetur dolor earum impedit iusto nesciunt perspiciatis voluptatem? Asperiores dolore esse,
-                excepturi iste, itaque iusto, labore minima mollitia optio quam quibusdam rerum tenetur.
-            </p>
-        </article>
-        <section>
-            <img src="images/Canada.svg.jpg" id="Flag_map_of_Canada">
-        </section>
-
-
     </div>
+</header>
 
-    <div class="col-3 right">
-        <h3>IT jobs & work opportunities</h3>
-
-        <section class="col-4">
-            <article class="jobs">
-                <div class="top">
-                    <div class="promo popular">Most popular</div>
-                    <h3>Cybersecurity Analyst</h3>
-                </div>
-            </article>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a metus eget magna varius tincidunt malesuada pellentesque augue.
-            </p>
-            <div class="salary">52.03</div>
-        </section>
-
-        <section class="col-4">
-            <article class="jobs">
-                <div class="top">
-                    <div class="promo new">New</div>
-                    <h3>IT Technician</h3>
-                </div>
-            </article>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <div class="salary">38.5</div>
-        </section>
-
-        <section class="col-4">
-            <article class="jobs">
-                <div class="top">
-                    <div class="promo new">New</div>
-                    <h3>Senior Business IT analyst</h3>
-                </div>
-            </article>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <div class="salary">120.0</div>
-        </section>
-
-
+<!-- Program Cards Section -->
+<section id="programs" class="program-cards">
+    <!-- Card 1 (target for the Browse link) -->
+    <div class="card" id="program1">
+        <img src="program1.jpg" alt="Program 1">
+        <div class="card-content">
+            <h2>Program 1</h2>
+            <p>Explore the cutting-edge curriculum of Program 1.</p>
+        </div>
     </div>
-</div>
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="program2.jpg" alt="Program 2">
+        <div class="card-content">
+            <h2>Program 2</h2>
+            <p>Dive deep into the world of innovation with Program 2.</p>
+        </div>
+    </div>
+    <!-- Add more cards as needed -->
+</section>
 
-<div class="footer">
-    <section class="text-left">
-        &copy; 2025 |  NWP &trade;
-    </section>
-    <section class="text-right ">
-        All rights reserved
-    </section>
-</div>
-
-
-
-
-
-
+<!-- Course Gallery Section -->
+<section class="course-gallery">
+    <h2>Course Gallery</h2>
+    <div class="course-grid">
+        <!-- Course 1 -->
+        <div class="course">
+            <div class="course-image-wrapper">
+                <img src="course1.jpg" alt="Course 1">
+            </div>
+            <h3>Course 1 Title</h3>
+            <!-- Course info hidden by default -->
+            <div class="course-info">
+                <p>Credits: 3</p>
+                <p>Total Hours: 40</p>
+            </div>
+        </div>
+        <!-- Course 2 -->
+        <div class="course">
+            <div class="course-image-wrapper">
+                <img src="course2.jpg" alt="Course 2">
+            </div>
+            <h3>Course 2 Title</h3>
+            <div class="course-info">
+                <p>Credits: 4</p>
+                <p>Total Hours: 50</p>
+            </div>
+        </div>
+        <!-- Add more course items as needed -->
+    </div>
+</section>
 </body>
 </html>
