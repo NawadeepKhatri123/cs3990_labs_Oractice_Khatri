@@ -2,72 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CS NWP Programs Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Full-width Header -->
-<header>
-    <div class="header-content">
-        <h1>Welcome to CS NWP Programs</h1>
-        <nav>
-            <!-- Clicking "Browse NWP programs" scrolls to the first program card -->
-            <a href="#program1" class="nav-link">Browse NWP programs</a>
-            <a href="https://www.nwpwebsite.com" target="_blank" class="nav-link">Visit NWP website</a>
-        </nav>
-    </div>
-</header>
-
-<!-- Program Cards Section -->
-<section id="programs" class="program-cards">
-    <!-- Card 1 (target for the Browse link) -->
-    <div class="card" id="program1">
-        <img src="program1.jpg" alt="Program 1">
-        <div class="card-content">
-            <h2>Program 1</h2>
-            <p>Explore the cutting-edge curriculum of Program 1.</p>
+    <div class="container">
+        <section class="top1">
+            <ul>
+                <li class = "list-side">Course 1</li>
+                <li class = "list-side">Course 2</li>
+                <li class = "list-side">Course 3</li>
+                <li class = "list-side">Course 4</li>
+            </ul>
+        </section>
+        <section class="top2">
+            <ol type="a">
+                <li class="list-right" data-clue="1 year">Item 1</li>
+                <li class="list-right" data-clue="2 year">Item 2</li>
+                <li class="list-right" data-clue="3 year">Item 3</li>
+                <li class="list-right" data-clue="3 year">Item 4</li>
+            </ol>
+        </section>
+        <div class="main">
+            <section class = "main-header">
+                <h1>Hover me to see the text below!</h1>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam molestias ab hic sed, rerum culpa qui doloremque sunt officiis doloribus!</p>
+            </section>
+            <section class = "image-row">
+                <img src = "nwp.jpg", height = 120, width = 200>
+            </section>
         </div>
+        <footer class="footer">
+            <div class = "foot">
+                CSS GRID LAYOUT
+            </div>
+        </footer>
     </div>
-    <!-- Card 2 -->
-    <div class="card">
-        <img src="program2.jpg" alt="Program 2">
-        <div class="card-content">
-            <h2>Program 2</h2>
-            <p>Dive deep into the world of innovation with Program 2.</p>
-        </div>
-    </div>
-    <!-- Add more cards as needed -->
-</section>
-
-<!-- Course Gallery Section -->
-<section class="course-gallery">
-    <h2>Course Gallery</h2>
-    <div class="course-grid">
-        <!-- Course 1 -->
-        <div class="course">
-            <div class="course-image-wrapper">
-                <img src="course1.jpg" alt="Course 1">
-            </div>
-            <h3>Course 1 Title</h3>
-            <!-- Course info hidden by default -->
-            <div class="course-info">
-                <p>Credits: 3</p>
-                <p>Total Hours: 40</p>
-            </div>
-        </div>
-        <!-- Course 2 -->
-        <div class="course">
-            <div class="course-image-wrapper">
-                <img src="course2.jpg" alt="Course 2">
-            </div>
-            <h3>Course 2 Title</h3>
-            <div class="course-info">
-                <p>Credits: 4</p>
-                <p>Total Hours: 50</p>
-            </div>
-        </div>
-        <!-- Add more course items as needed -->
-    </div>
-</section>
 </body>
 </html>
+

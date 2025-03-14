@@ -1,129 +1,152 @@
-/* Global Reset & Box Sizing */
-* {
-    box-sizing: border-box;
+body, html {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkblue;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "top1 top2"
+        "main main"
+        "footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr; 
+    height: 100vh;
+}
+
+.top1, .top2 {
+    padding: 20px;
+}
+
+.top1 {
+    grid-area: top1;
+    background: lightblue;
+    margin-right: 5px;
+}
+
+.list-side {
+    background-color: darkblue;
+    color:white;
+}
+
+.top2 {
+    grid-area: top2;
+    background: lightblue;
+}
+
+.list-right {
+    background-color: blue;
+}
+
+.main {
+    grid-area: main;
+    background: lightyellow;
+    margin:5px;
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "main-header image-row";
+    grid-template-rows: auto;
+    grid-template-columns: 5fr 1fr;
+    background-color: darkblue;
+}
+
+.main-header {
+    grid-area: main-header;
+    background-color: lightblue;
+    margin-right: 5px;
+    color:white
+}
+
+
+
+
+
+ul {
+    list-style: none;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-/* Header Styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-.nav-link {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Hover effect for links */
-.nav-link:hover {
-    background-color: #fff;
-    color: #333;
-}
-
-/* Program Cards Section */
-.program-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.card {
-    background: #f4f4f4;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    display: block;
-    /* Only round the top-left and top-right corners */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-/* Course Gallery Section */
-.course-gallery {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-.course-gallery h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.course {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
+li {
+    margin: 10px 0;
     padding: 10px;
+    border-radius: 5px;
 }
 
-.course-image-wrapper {
-    overflow: hidden;
-    /* Round only top corners */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.top1 li {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.course-image-wrapper img {
-    width: 100%;
-    transition: transform 0.3s;
+.top1 li:nth-child(odd):hover {
+    background: green;
 }
 
-/* Scale up course image on hover */
-.course:hover .course-image-wrapper img {
-    transform: scale(1.2);
+.top1 li:nth-child(even):hover {
+    background: darkgray;
 }
 
-/* Hide course info by default */
-.course-info {
+
+.hidden {
     display: none;
-    margin-top: 10px;
+    background-color: purple;
 }
 
-/* Reveal course info on hover over the course container */
-.course:hover .course-info {
+.main h1:hover + .hidden {
     display: block;
 }
+
+/* this is the odd year*/
+.top2 li[data-clue="1 year"]:hover::after {
+    content: attr(data-clue);
+    margin-left: 10px;
+    font-style: italic;
+    color: white; 
+}
+/* this is the even year*/
+.top2 li[data-clue="2 year"]:hover::after {
+    content: attr(data-clue);
+    margin-left: 10px;
+    font-style: italic;
+    color: red;
+}
+
+.top2 li[data-clue="3 year"]:hover::after {
+    content: attr(data-clue);
+    margin-left: 10px;
+    font-style: italic;
+    color: white; 
+}
+
+.top2 li[data-clue="4 year"]:hover::after {
+    content: attr(data-clue);
+    margin-left: 10px;
+    font-style: italic;
+    color: red; 
+}
+
+.image-row {
+    grid-area: image-row;
+    display: grid;
+    place-items: center; 
+    background-color: lightblue; 
+    padding: 1px; 
+}
+
+.image-row img {
+    height: auto; 
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: blue;
+    
+}
+.foot{
+    background: linear-gradient(to right,red, yellow);
+
+}
+
