@@ -6,7 +6,6 @@ export class ColorButton extends Button {
         this.fColor = fColor;
     }
 
-    // Updated to use DOM manipulation instead of document.write()
     show(targetElement) {
         const button = document.createElement('button');
         button.title = this.btnTitle;

@@ -11,7 +11,6 @@ export function generateButtons(arrTexts, arrColors) {
     return arrButtons;
 }
 
-// Updated to accept a target element parameter
 export function displayButtonsSequentially(arrButtons, targetElement) {
     arrButtons.forEach((button, index) => {
         setTimeout(() => {
