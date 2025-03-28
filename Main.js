@@ -23,12 +23,12 @@ myColorBtn.show(buttonContainer);
 // Define an array of news resource objects.
 const arrRecourses = [
     {
-        srcImg: 'images/1.jpg', // Update this path to match your actual image location
+        srcImg: 'images/BC.jpg', // Update this path to match your actual image location
         newsTitle: 'Breaking News',
         newsContent: 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century.'
     },
     {
-        srcImg: 'images/2.jpg', // Update this path to match your actual image location
+        srcImg: 'images/alberta.jpg', // Update this path to match your actual image location
         newsTitle: 'Daily Update',
         newsContent: 'The purpose of lorem ipsum is to create a natural looking block of text that does not distract from the layout. This technique is often used in page layouts.'
     }
