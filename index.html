@@ -1,73 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CS NWP Programs Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
 </head>
 <body>
-<!-- Full-width Header -->
-<header>
-    <div class="header-content">
-        <h1>Welcome to CS NWP Programs</h1>
-        <nav>
-            <!-- Clicking "Browse NWP programs" scrolls to the first program card -->
-            <a href="#program1" class="nav-link">Browse NWP programs</a>
-            <a href="https://www.nwpwebsite.com" target="_blank" class="nav-link">Visit NWP website</a>
-        </nav>
-    </div>
-</header>
+    <h1>Buttons Section</h1>
+    <script type="module" src="Main.js"></script>
 
-<!-- Program Cards Section -->
-<section id="programs" class="program-cards">
-    <!-- Card 1 (target for the Browse link) -->
-    <div class="card" id="program1">
-        <img src="program1.jpg" alt="Program 1">
-        <div class="card-content">
-            <h2>Program 1</h2>
-            <p>Explore the cutting-edge curriculum of Program 1.</p>
-        </div>
-    </div>
-    <!-- Card 2 -->
-    <div class="card">
-        <img src="program2.jpg" alt="Program 2">
-        <div class="card-content">
-            <h2>Program 2</h2>
-            <p>Dive deep into the world of innovation with Program 2.</p>
-        </div>
-    </div>
-    <!-- Add more cards as needed -->
-</section>
-
-<!-- Course Gallery Section -->
-<section class="course-gallery">
-    <h2>Course Gallery</h2>
-    <div class="course-grid">
-        <!-- Course 1 -->
-        <div class="course">
-            <div class="course-image-wrapper">
-                <img src="course1.jpg" alt="Course 1">
-            </div>
-            <h3>Course 1 Title</h3>
-            <!-- Course info hidden by default -->
-            <div class="course-info">
-                <p>Credits: 3</p>
-                <p>Total Hours: 40</p>
-            </div>
-        </div>
-        <!-- Course 2 -->
-        <div class="course">
-            <div class="course-image-wrapper">
-                <img src="course2.jpg" alt="Course 2">
-            </div>
-            <h3>Course 2 Title</h3>
-            <div class="course-info">
-                <p>Credits: 4</p>
-                <p>Total Hours: 50</p>
-            </div>
-        </div>
-        <!-- Add more course items as needed -->
-    </div>
-</section>
+    <h1>News Section</h1>
+    <div id="content"></div>
+    <script type="module" src="generateNews.js"></script>
 </body>
 </html>
