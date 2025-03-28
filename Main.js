@@ -2,7 +2,7 @@
 import { arrTexts, arrColors } from './myArrays.js';
 import { generateButtons, displayButtonsSequentially } from './myFunctions.js';
 import { ColorButton } from './myColorButton.js';
-import { generateNews } from './news.js';
+import { generateNews } from './News.js';
 
 // ----- TASK 1: BUTTONS -----
 
