@@ -1,4 +1,3 @@
-// myButton.js
 export class Button {
     constructor(btnText, btnBgColor) {
         this.btnText = btnText;
@@ -7,12 +6,12 @@ export class Button {
         this.btnTitle = `${btnText} is shown on the ${btnBgColor} background`;
     }
 
-    // Displays the button using document.write()
-    show() {
-        document.write(
-            `<button title="${this.btnTitle}" style="background-color: ${this.btnBgColor};">
-        ${this.btnText}
-      </button>`
-        );
+    // Updated to use DOM manipulation instead of document.write()
+    show(targetElement) {
+        const button = document.createElement('button');
+        button.title = this.btnTitle;
+        button.style.backgroundColor = this.btnBgColor;
+        button.textContent = this.btnText;
+        targetElement.appendChild(button);
     }
 }

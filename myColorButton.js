@@ -1,4 +1,3 @@
-// myColorButton.js
 import { Button } from './myButton.js';
 
 export class ColorButton extends Button {
@@ -7,12 +6,13 @@ export class ColorButton extends Button {
         this.fColor = fColor;
     }
 
-    // Displays the button with the extra font color style
-    show() {
-        document.write(
-            `<button title="${this.btnTitle}" style="background-color: ${this.btnBgColor}; color: ${this.fColor};">
-        ${this.btnText}
-      </button>`
-        );
+    // Updated to use DOM manipulation instead of document.write()
+    show(targetElement) {
+        const button = document.createElement('button');
+        button.title = this.btnTitle;
+        button.style.backgroundColor = this.btnBgColor;
+        button.style.color = this.fColor;
+        button.textContent = this.btnText;
+        targetElement.appendChild(button);
     }
 }

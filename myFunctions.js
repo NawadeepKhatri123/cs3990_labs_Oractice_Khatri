@@ -1,4 +1,3 @@
-// myFunctions.js
 import { Button } from './myButton.js';
 
 // Generates an array of Button instances using two arrays
@@ -12,11 +11,11 @@ export function generateButtons(arrTexts, arrColors) {
     return arrButtons;
 }
 
-// Displays the buttons sequentially, one every 30 seconds.
-export function displayButtonsSequentially(arrButtons) {
+// Updated to accept a target element parameter
+export function displayButtonsSequentially(arrButtons, targetElement) {
     arrButtons.forEach((button, index) => {
         setTimeout(() => {
-            button.show();
+            button.show(targetElement);
         }, index * 3000);
     });
 }
