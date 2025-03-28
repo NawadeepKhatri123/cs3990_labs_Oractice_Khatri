@@ -1,4 +1,3 @@
-
-export const arrTexts = ["Save Progress", "Click Me", "Download", "Submit"];
-export const arrColors = ["red", "blue", "green", "purple"];
-export const arrButtons = [];
+// myArrays.js
+export const arrTexts = ['Save Progress', 'Click me', 'Download', 'Submit'];
+export const arrColors = ['green', 'blue', 'orange', 'red'];

@@ -1,17 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 7</title>
+    <title>Assignment 7 – Buttons & News</title>
+    <style>
+        /* Optional styling for news articles */
+        article {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Buttons Section</h1>
-    <script type="module" src="Main.js"></script>
+<!-- This content block will be used by generateNews() -->
+<div id="content">
+    <!-- Placeholder paragraphs. Each will be replaced with a news item. -->
+    <p></p>
+    <p></p>
+</div>
 
-    <h1>News Section</h1>
-    <div id="content"></div>
-    <script type="module" src="generateNews.js"></script>
+<!-- Include the main module -->
+<script type="module" src="Main.js"></script>
 </body>
 </html>
