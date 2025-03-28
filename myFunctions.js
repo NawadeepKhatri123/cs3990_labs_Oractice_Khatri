@@ -17,6 +17,6 @@ export function displayButtonsSequentially(arrButtons) {
     arrButtons.forEach((button, index) => {
         setTimeout(() => {
             button.show();
-        }, index * 30000); // delay increases by 30 seconds for each button
+        }, index * 3000);
     });
 }
