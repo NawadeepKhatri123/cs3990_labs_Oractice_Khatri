@@ -2,19 +2,19 @@ const recipes = [
   {
     dish: "Picadillo Cornbread Casserole",
     category: "Dinner",
-    image: "/img/1.jpg",
+    image: "1.jpg",
     descr: "This lively picadillo cornbread casserole hits the spot and is the perfect vehicle to combine in a savory, cheesy base under-baked cornbread. lorem10 lorem10 lorem10 lorem10"
   },
   {
     dish: "Tomato Soup and Grilled Cheese Casserole",
     category: "Dinner",
-    image: "/img/2.jpg",
+    image: "2.jpg",
      descr: "This tomato soup and grilled cheese casserole tastes like the classic combo: campy, golden, melty, and delicious. lorem20 lorem20 lorem20 lorem20"
   },
   {
     dish: "Cream Cheese and Peanut Butter Strawberry Sandwich",
     category: "Sandwiches",
-    image: "/img/3.jpg",
+    image: "3.jpg",
     descr: "This cream cheese and peanut butter strawberry sandwich takes a classic combo somewhere fun. lorem30 lorem30 lorem30 lorem30"
   }
 ];
